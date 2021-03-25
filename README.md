@@ -11,5 +11,9 @@ I'm using this as a way to practice
     * basic git commands
         - git clone 
         - git add .
+        - git add file_name
         - git commit -m "message to add"
+        - git status
+        - git log
+        - git push origin main
    
