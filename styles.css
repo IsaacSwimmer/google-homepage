@@ -91,11 +91,12 @@ nav {
     position: relative;
     display: flex;
     align-items: center;
+    padding-top: 24px;
 }
 
 
 a.custom-link {
-    font-size: 16px;
+    font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -110,11 +111,70 @@ div#top-left-nav-group {
     left: 15px;
 }
 
+a#about-link {
+    margin-left: 12px;
+    margin-right: 20px;
+}
+
+
+
+
+
 div#top-right-nav-group {
     display: flex;
     position: absolute;
     right: 15px;
+    align-items: center;
 }
+
+a#google-sign-in {
+    padding: 9px 23px 9px 23px;
+    background-color: rgb(26, 115, 232);
+    color: #fff;
+    margin-left: 12px;
+    font-size: 13px;
+    letter-spacing: .25px;
+    border-radius: 4px;
+}
+
+a#google-sign-in:hover,
+a#google-sign-in:active {
+    background-color: rgb(80, 148, 237);
+    box-shadow: 0 1px 2px 0 rgba(66, 133, 244, 0.3), 0 1px 3px 1px rgba(66, 133, 244,0.15);
+}
+
+a#google-apps-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-left: 12px;
+}
+
+a#google-apps-container:hover,
+a#google-apps-container:active {
+    background-color: rgba(211, 211, 211, 0.4);
+}
+
+svg#nine-dots {
+    display: block;
+    margin: auto;
+    position: relative;
+    left: 8px;
+    top: 8px;
+}
+
+a#images-link {
+    margin-left: 12px;
+}
+
+
+
+
+
+
+
+
 
 
 
