@@ -1,0 +1,189 @@
+/* TO DO -- https://electrictoolbox.com/add-icon-before-after-link-css/ */ 
+
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.tool-tip-text {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    visibility: hidden;
+    width: 120px;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px; /* half of tool tip width to center */
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.tool-tip-text::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HEADER */
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 4vh;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+a.custom-link {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a.custom-link:hover {
+    text-decoration: underline;
+}
+
+
+div#top-left-nav-group {
+    display: flex;
+    position: absolute;
+    left: 15px;
+}
+
+div#top-right-nav-group {
+    display: flex;
+    position: absolute;
+    right: 15px;
+}
+
+
+
+
+
+
+
+
+/* FEATURED CONTENT */
+section#center-piece {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+
+img#google-logo {
+    margin-top: 30vh;
+    margin-bottom: 26px;
+}
+
+
+div#google-search-form-container {
+    position: relative;
+    display: flex;
+    width: 56vw; /* media query for smaller screens */
+    height: 46px;
+    max-width: 584px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+div#google-search-form-container:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+
+form#google-search-form {
+    flex: 1; /* make width fit remaining space*/
+}
+
+div#search-icon-container {
+    width: 20px;
+    height: 20px;
+    margin-right: 14px;
+    margin-left: 12px;
+}
+
+input#google-search-form-input {
+    width: 100%;
+    border: none;
+    color: rgba(0, 0, 0, .87);
+    height: 34px;
+    font-size: 16px;
+}
+
+input#google-search-form-input:active {
+
+}
+
+div#voice-search-icon-container {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    margin-left: 14px;
+    align-self: flex-end;
+}
+
+div#voice-search-icon-container:hover .tool-tip-text {
+    visibility: visible;
+}
+
+/* FOOTER */
