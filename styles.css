@@ -17,6 +17,12 @@ a {
     text-decoration: none;
 }
 
+button {
+    outline: none;
+    border: none;  
+    cursor: pointer;
+}
+
 input:focus,
 select:focus,
 textarea:focus,
@@ -141,7 +147,7 @@ div#google-search-form-container {
     border: 1px solid #dfe1e5;
     border-radius: 24px;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 div#google-search-form-container:hover {
@@ -157,7 +163,7 @@ div#search-icon-container {
     width: 20px;
     height: 20px;
     margin-right: 14px;
-    margin-left: 12px;
+    margin-left: 16px;
 }
 
 input#google-search-form-input {
@@ -176,7 +182,7 @@ div#voice-search-icon-container {
     position: relative;
     width: 24px;
     height: 24px;
-    margin-right: 8px;
+    margin-right: 14px;
     margin-bottom: 10px;
     margin-left: 14px;
     align-self: flex-end;
@@ -184,6 +190,28 @@ div#voice-search-icon-container {
 
 div#voice-search-icon-container:hover .tool-tip-text {
     visibility: visible;
+}
+
+
+
+
+button#google-search-btn,
+button#im-feeling-lucky-btn {
+    font-size: 14px;
+    height:34px;
+    padding: 0px 16px 0px 16px;
+    margin-left: 3px;
+    margin-right: 3px;
+    background-color: rgb(248, 249, 250);
+    border-radius: 5px;
+}
+
+button#google-search-btn:hover,
+button#im-feeling-lucky-btn:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202214;
 }
 
 /* FOOTER */
