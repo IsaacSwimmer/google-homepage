@@ -274,4 +274,36 @@ button#im-feeling-lucky-btn:hover {
     color: #202214;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* FOOTER */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(211, 211, 211, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    padding: 24px 0 24px 0;
+}
